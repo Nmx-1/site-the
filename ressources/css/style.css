@@ -85,8 +85,8 @@ section{
 ===========================================*/
 
 header {
-    background-image: linear-gradient(#4423049f, #85a0249d),
-        url(/ressources/image/teas.jpeg );
+    background-image: linear-gradient(brown,orange),
+        url(/ressources/image/gallerie/teas.jpeg );
     height: 100vh;
     background-position: center;
     background-size: cover;
@@ -211,4 +211,52 @@ header {
 
 .galeries-title h4{
     color: white;
+}
+
+/*CLIENTS
+============================================*/
+
+.clients{
+    background-image:linear-gradient(brown,orange),
+        url(/ressources/image/gallerie/the-paysage.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+}
+
+.clients-title h2{
+    color: white;
+}
+
+.clients h2:after{
+        background-color: white;
+    }
+
+blockquote{
+    padding: 5px;
+    font-style: italic;
+    line-height: 130%;
+    color: white;
+}
+
+blockquote::before{
+    content:\201C;
+    font-size: 800%;
+    font-family: 'Courier New', Courier, monospace;
+    position: absolute;
+    top: 35px;
+    left: 5px;
+    color: rgba(255, 255, 255, 0.6);
+
+}
+
+cite{
+    font-size: 90%;
+    display: block;
+    margin-top: 20px;
+}
+
+cite img {
+    height: 50px;
+    border-radius: 50%;
+    margin-right: 10px;
 }
