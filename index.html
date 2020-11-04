@@ -19,6 +19,19 @@
 
 <body>
     <header>
+        <nav class="navbar navbar-expand-md bg-light navbar-light">
+            <a class=navbar-brand href="/">La Théière de Chine</a>
+            <div class=navbar-bar>
+                <a class=" nav-item nav-link" href="">Qui sommes-nous</a>
+                <a class=" nav-item nav-link" href="">Nos produits</a>
+                <a class=" nav-item nav-link" href="">Photos</a>
+                <a class=" nav-item nav-link" href=""> Nos packs</a>
+                <a class=" nav-item nav-link" href="">Contact</a>
+
+            </div>
+        </nav>
+        
+        
         <div class="container">
             <div class="row">
                 <div class="col home-title">
@@ -353,48 +366,49 @@
                     <form action="">
                     <div class="row">
                         <div class="col-md-6">
-                            <label for="">Nom:</label>
-                            <input type="text" id="name">
+                            <div class="contact-form">
+                                <label for="">Nom:</label>
+                                <input type="text" id="name">
+                            </div>
                         </div>
                         <div class="col-md-6">
+                            <div class="contact-form">
                             <label for="">Email</label>
                             <input type="email" id="email" placeholder="Ajouter votre email">
+                        </div>
                         </div>
                     </div>
                     <!------------------------------Service contact---------------------------------------->
                     <div class="row">
                         <div class="col-md-12">
-                            <label for="">Selectionnez le service</label>
-                                <select>
-                                    <option value="">Service client</option>
-                                    <option value=""> Service comptable</option>
-                                    <option value="">SAV</option>
-                                </select>
+                            <div class="contact-form">
+                                <label for="">Selectionnez le service</label>
+                                    <select>
+                                        <option value="">Service client</option>
+                                        <option value=""> Service comptable</option>
+                                        <option value="">SAV</option>
+                                    </select>
                             </div>
+                        </div>
                     </div>
                     <!------------------------------Message---------------------------------------->
                     <div class="row">
                         <div class="col-md-12">
-                            <label>Votre message:</label>
-                            <textarea id="message" rows="3"></textarea>
-                        
+                            <div class="contact-form">
+                                <label>Votre message:</label>
+                                <textarea id="message" rows="3" class="contact-message"></textarea>
+                            </div>
                         </div>
                     </div>
+                    <!------------------------------Bouton envoyer---------------------------------------->
                     <div class="row">
                         <div class="col-md-12">
-                            <button class=btn>Envoyer</button>
+                            <div class="contact-form">
+                                <button class= btn-contact>Envoyer</button>
+                            </div> 
                         </div>
                     </div>
-
-                    
-                
-                
-                
                     </form>
-                
-                
-                
-                
                 </div>
             </div>
                 <!--------------------CARTE-------------------->
@@ -402,41 +416,16 @@
                 <div class="map">
                     <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d57601.984081843686!2d-0.5977779171457228!3d47.469539743144445!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x480878ea4673b05d%3A0x6a3037258445d6be!2sPalais%20des%20Th%C3%A9s!5e0!3m2!1sfr!2sfr!4v1604415758825!5m2!1sfr!2sfr" width="600" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
                 </div>
-
             </div>
         </div>
     </div>
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 </section>
 
+<footer>
+    <div class="copyright">
+        <p>Site de thé - 2020. <a href="/">Mentions légales</a></p>
+    </div>
+</footer>
 
 
 
@@ -460,18 +449,9 @@
 
 
 
-<!-- next
+
+<!-- SCRIPT
 ====================================================-->
-
-
-
-
-
-
-
-
-
-
 </body>
 <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"
     integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous">
